@@ -1,6 +1,9 @@
+Claro, Helio! Aqui está o texto revisado e adaptado para refletir as cargas horárias e os tópicos que você mencionou, com formatação estilo GitHub Markdown:
+
+```markdown
 # 🚀 Desenvolvimento de Sistemas Web com React (Frontend Moderno)
 
-Bem-vindo ao curso de **Desenvolvimento de Sistemas Web com React**! Durante 6 meses, você vai aprender a criar aplicações web modernas, responsivas e escaláveis utilizando **HTML5**, **CSS3**, **JavaScript ES6+**, **React**, e ferramentas do ecossistema como **React Router**, **Axios**, **Context API**, e **Hooks**.
+Bem-vindo ao curso de **Desenvolvimento de Sistemas Web com React**! Ao longo de 6 meses, você vai dominar as principais tecnologias e práticas do desenvolvimento frontend moderno, com foco em **HTML5**, **CSS3/SASS**, **JavaScript ES6+**, **React**, **TypeScript**, **UX Design**, **Orientação a Objetos** e **Web Services (Client Side)**.
 
 ---
 
@@ -54,29 +57,59 @@ Durante o curso, você desenvolverá miniapps para praticar os conceitos fundame
 
 ## 📚 Conteúdo Programático
 
-### 🧱 Fundamentos com JavaScript
+### 🧱 HTML, CSS e SASS (21h)
 
-1. **JavaScript Moderno (ES6+)**  
-   `let/const`, arrow functions, template literals, destructuring, spread/rest.
+- Estrutura semântica com HTML5
+- Layouts responsivos com Flexbox e Grid
+- Estilização avançada com CSS3
+- Pré-processamento com SASS
+- Boas práticas de acessibilidade
 
-2. **Programação Funcional**  
-   `map`, `filter`, `reduce`, funções puras e imutabilidade.
+### 🧠 Lógica de Programação com JavaScript (21h)
 
-3. **Manipulação do DOM**  
-   Eventos, criação dinâmica de elementos, formulários.
+- Tipos de dados, operadores e estruturas de controle
+- Funções, escopo e closures
+- Arrays e objetos
+- Algoritmos básicos e resolução de problemas
 
-4. **Persistência Local**  
-   Uso de `localStorage` e `sessionStorage`.
+### 🎨 Noções de UX Design (15h)
 
-5. **Consumo de APIs com Fetch/Axios**  
-   Métodos HTTP, tratamento de erros, renderização dinâmica.
+- Princípios de usabilidade
+- Arquitetura da informação
+- Wireframes e prototipagem
+- Design centrado no usuário
+- Testes de usabilidade e heurísticas
+
+### ⚛️ ReactJS e Ecossistema (21h)
+
+- JSX e componentes funcionais
+- Props, estado e ciclo de vida com Hooks
+- React Router para navegação
+- Context API para gerenciamento de estado global
+- Integração com APIs usando Axios
+
+### 🧩 TypeScript e Orientação a Objetos (21h)
+
+- Tipagem estática e interfaces
+- Classes, herança e encapsulamento
+- Generics e decorators
+- Refatoração de componentes React com TypeScript
+- Boas práticas de organização de código
+
+### 🌐 Web Services (Client Side) (15h)
+
+- Consumo de APIs REST com Fetch e Axios
+- Autenticação e headers personalizados
+- Tratamento de erros e loading states
+- Comunicação assíncrona com Promises e async/await
+- Integração com serviços externos
 
 ---
 
-### ⚛️ React e Ecossistema
+## 🛠 Ferramentas e Tecnologias Utilizadas
 
-6. **Introdução ao React**  
-   JSX, componentes funcionais, props, estado com `useState`.
-
-7. **Hooks Essenciais**  
-   `useEffect
+- Visual Studio Code
+- Git e GitHub
+- Node.js e npm
+- Figma (para prototipagem)
+- Postman (para testes de APIs)
