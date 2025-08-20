@@ -4,25 +4,6 @@ Bem-vindo ao curso de **Desenvolvimento de Sistemas Web com React**! Ao longo de
 
 ---
 
-## 🎯 Projeto Final: Sistema de Logística de Entregas
-
-O projeto final será uma aplicação completa de logística que permite:
-
-- 📦 Listar encomendas com filtros dinâmicos
-- 📝 Cadastrar novas entregas com rotas (origem → centros de distribuição → destino)
-- 🔍 Visualizar os detalhes de cada entrega
-- 🔗 Conectar-se a uma API REST externa (fornecida)
-
-### 📅 Cronograma de Entregas
-
-| Sprint     | Objetivo                                      | Data de Entrega |
-|------------|-----------------------------------------------|-----------------|
-| Sprint 1   | Listagem e filtros das entregas               | 16/06           |
-| Sprint 2   | Cadastro de entrega e definição de rota       | 09/07           |
-| Sprint 3   | Visualização de detalhes + refinamento visual | 23/07           |
-
----
-
 ## 🧪 Miniapps Práticos
 
 Durante o curso, você desenvolverá miniapps para praticar os conceitos fundamentais:
