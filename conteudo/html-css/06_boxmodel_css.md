@@ -1,4 +1,4 @@
-# 📦 Box Model - CSS Moderno
+# 📦 Box Model - CSS
 
 O **Box Model** é a base do layout web: todo elemento HTML é uma caixa composta por conteúdo, preenchimento, borda e margem. Dominar o Box Model é essencial para criar layouts responsivos e modernos.
 
