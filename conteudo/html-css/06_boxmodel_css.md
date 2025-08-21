@@ -31,11 +31,25 @@ Cada elemento tem quatro camadas principais:
 }
 ```
 
-**Dicas modernas:**
-- Use `rem` ou `em` para espaçamentos responsivos.
-- `min()` e `max()` ajudam a limitar tamanhos.
-- `box-shadow` e `border-radius` criam visuais suaves.
+## 🧩 Boas práticas
 
+### 🔹 Use `rem` ou `em` para espaçamentos responsivos
+- `rem`: baseado no tamanho da fonte do elemento raiz (`html`). Garante consistência em todo o layout.
+- `em`: relativo ao tamanho da fonte do elemento pai. Permite que componentes se ajustem dinamicamente ao contexto.
+- Ideal para margens, paddings e fontes que precisam se adaptar a diferentes resoluções sem perder proporção.
+
+---
+
+### As funções `min()` e `max()` permitem limitar tamanhos de elementos de forma flexível
+- `min(a, b)`: escolhe o menor valor entre `a` e `b`. Evita que um elemento ultrapasse um limite.
+- `max(a, b)`: escolhe o maior valor entre `a` e `b`. Garante que o elemento nunca fique menor que um certo tamanho.
+- ✅ Perfeito para layouts fluidos que respeitam limites mínimos ou máximos sem media queries.
+
+**Exemplo:**
+```css
+width: min(100%, 320px);
+
+- Ou seja, em telas grandes: largura será **máximo 320px** e em telas pequenas: largura será **100% do espaço disponível**
 ---
 
 ## 2\. Tamanho e Cálculo: `width`, `height`, `box-sizing`
