@@ -181,7 +181,7 @@ Veja como fica a estrutura básica de um arquivo HTML:
 
 -----
 
-## 🚀 Atividade Prática
+## 🚀 Atividade Prática 01
 
 **Objetivo:** Criar seu primeiro arquivo HTML, aplicando os conceitos de estrutura essencial.
 

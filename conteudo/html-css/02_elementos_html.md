@@ -167,7 +167,7 @@ Para destacar partes do texto, utilize:
 
 -----
 
-## 🚀 Atividade Prática da Semana
+## 🚀 Atividade Prática 02
 
 **Objetivo:** Praticar a estruturação de um texto semântico usando títulos, parágrafos e tags modernas de HTML.
 
