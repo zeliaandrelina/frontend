@@ -188,9 +188,9 @@ Veja como fica a estrutura básica de um arquivo HTML:
 **Passos:**
 
 1. Abra o **Visual Studio Code**.
-2. Crie um novo arquivo e salve como `index.html`.
+2. Crie um novo arquivo e salve como `pratica1.html`.
 3. Digite toda a estrutura básica apresentada acima.
-4. Altere o `<title>` para "Semana 2 - Meu Primeiro Site".
+4. Altere o `<title>` para "Meu Primeiro Site".
 5. No `<body>`, adicione:
     - Um `<h1>` com seu nome completo.
     - Um `<p>` descrevendo o que achou mais interessante na aula.
