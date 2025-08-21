@@ -28,7 +28,10 @@ Definem o número e o tamanho das colunas e linhas.
     grid-template-rows: 100px auto;
 }
 ```
-- `px`, `em`, `%`, `fr` (fração do espaço disponível).
+- **`px`**: valor fixo em pixels (ex: `200px`).
+- **`em`**: relativo ao tamanho da fonte do elemento.
+- **`%`**: porcentagem em relação ao elemento pai.
+- **`fr`**: fração do espaço disponível (ex: `1fr 2fr` divide em 1 parte e 2 partes).
 
 ### 2. `gap`, `row-gap`, `column-gap`
 
@@ -41,6 +44,9 @@ Espaçamento entre linhas e colunas.
     column-gap: 30px;
 }
 ```
+- **`gap`**: define o espaçamento geral entre linhas e colunas.
+- **`row-gap`**: define apenas o espaçamento entre linhas.
+- **`column-gap`**: define apenas o espaçamento entre colunas.
 
 ### 3. `grid-template-areas`
 
@@ -54,6 +60,9 @@ Permite nomear áreas do grid para facilitar o posicionamento.
         "footer footer";
 }
 ```
+- Cada string representa uma linha do grid.
+- Palavras representam áreas nomeadas.
+- Pontos (`.`) podem ser usados para áreas vazias.
 
 ### 4. `justify-items` e `align-items`
 
@@ -65,7 +74,10 @@ Alinha os itens nas células do grid.
     align-items: stretch;  /* vertical */
 }
 ```
-Valores: `start`, `end`, `center`, `stretch`.
+- **`start`**: alinha ao início (esquerda/superior).
+- **`end`**: alinha ao final (direita/inferior).
+- **`center`**: centraliza.
+- **`stretch`**: estica para preencher a célula (padrão).
 
 ### 5. `justify-content` e `align-content`
 
@@ -77,7 +89,13 @@ Alinha o grid dentro do container.
     align-content: center;
 }
 ```
-Valores: `start`, `end`, `center`, `stretch`, `space-between`, `space-around`, `space-evenly`.
+- **`start`**: alinha o grid ao início do container.
+- **`end`**: alinha ao final.
+- **`center`**: centraliza o grid.
+- **`stretch`**: estica o grid para preencher o container.
+- **`space-between`**: distribui o espaço igualmente entre as linhas/colunas, sem espaço nas extremidades.
+- **`space-around`**: distribui o espaço com metade do espaço nas extremidades.
+- **`space-evenly`**: distribui o espaço igualmente entre e nas extremidades.
 
 ### 6. `grid-auto-flow`
 
@@ -88,7 +106,11 @@ Controla o preenchimento automático das células.
     grid-auto-flow: row; /* padrão */
 }
 ```
-Valores: `row`, `column`, `dense`, `row dense`, `column dense`.
+- **`row`**: preenche por linhas.
+- **`column`**: preenche por colunas.
+- **`dense`**: tenta preencher espaços vazios automaticamente.
+- **`row dense`**: linhas com preenchimento denso.
+- **`column dense`**: colunas com preenchimento denso.
 
 ### 7. `grid-auto-rows` e `grid-auto-columns`
 
@@ -100,6 +122,8 @@ Define tamanho padrão para linhas/colunas criadas automaticamente.
     grid-auto-columns: 1fr;
 }
 ```
+- **`grid-auto-rows`**: altura padrão das linhas extras.
+- **`grid-auto-columns`**: largura padrão das colunas extras.
 
 ---
 
@@ -115,6 +139,8 @@ Define início e fim do item no grid.
     grid-row: 1 / span 2; /* ocupa 2 linhas */
 }
 ```
+- **`grid-column: início / fim`**: define de onde até onde o item vai nas colunas.
+- **`span`**: faz o item ocupar múltiplas linhas ou colunas.
 
 ### 2. `grid-area`
 
@@ -129,6 +155,8 @@ Associa o item a uma área nomeada ou define início/fim de linhas e colunas.
     grid-area: 1 / 2 / 3 / 4; /* linha início / coluna início / linha fim / coluna fim */
 }
 ```
+- **Nome da área**: associa ao nome definido em `grid-template-areas`.
+- **Quatro valores**: linha início / coluna início / linha fim / coluna fim.
 
 ### 3. `justify-self` e `align-self`
 
@@ -140,6 +168,10 @@ Alinha individualmente o item na célula.
     align-self: center;
 }
 ```
+- **`start`**: início da célula.
+- **`end`**: final da célula.
+- **`center`**: centraliza.
+- **`stretch`**: estica para preencher a célula.
 
 ---
 
@@ -252,3 +284,4 @@ Construir um layout de página usando CSS Grid, explorando as principais proprie
 
 - [MDN Web Docs: CSS Grid Layout](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout)
 - [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
