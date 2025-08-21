@@ -27,7 +27,7 @@ Cada elemento tem quatro camadas principais:
     transition: box-shadow 0.2s;
 }
 .card:hover {
-    box-shadow: 0 8px 24px #0002;
+    box-shadow: 0 10px 24px #0002;
 }
 ```
 

@@ -64,7 +64,7 @@ Use tags para destacar partes do texto:
 **Exemplo:**
 
 ```html
-<p>Endereço:<br>Rua Exemplo, 123</p>
+<p>Endereço:<br>Rua da Guia, 45</p>
 <hr>
 <p>Nova seção</p>
 ```
