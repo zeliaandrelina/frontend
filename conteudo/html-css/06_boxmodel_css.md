@@ -48,6 +48,7 @@ Cada elemento tem quatro camadas principais:
 **Exemplo:**
 ```css
 width: min(100%, 320px);
+```
 
 - Ou seja, em telas grandes: largura será **máximo 320px** e em telas pequenas: largura será **100% do espaço disponível**
 ---
