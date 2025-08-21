@@ -35,12 +35,12 @@ Durante o curso, você desenvolverá miniapps para praticar os conceitos fundame
 
 ## 📚 Conteúdo Programático
 
-### 🧱 HTML, CSS e SASS (21h)
+### 🧱 HTML, CSS (21h)
 
 - Estrutura semântica com HTML5
+- Estilização com CSS3
 - Layouts responsivos com Flexbox e Grid
-- Estilização avançada com CSS3
-- Pré-processamento com SASS
+- Utility-first CSS framework
 - Boas práticas de acessibilidade
 
 ### 🧠 Lógica de Programação com JavaScript (21h)
