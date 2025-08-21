@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos Didáticos de CSS Grid</title>
+    <style>
+        /* Estilos gerais para visualização */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background: #f8f8f8;
+            color: #222;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #2a5d84;
+        }
+        .grid-demo {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .grid-item {
+            background: #e3ecf7;
+            border: 1px solid #b3c6e0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        /* Exemplo 1 */
+        .grid-basico {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 60px 60px;
+        }
+
+        /* Exemplo 2 */
+        .grid-responsivo {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+
+        /* Exemplo 3 */
+        .grid-areas {
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 50px 100px 50px;
+            grid-template-areas:
+                'header header header'
+                'menu content ads'
+                'footer footer footer';
+        }
+        .area-header { grid-area: header; }
+        .area-menu { grid-area: menu; }
+        .area-content { grid-area: content; }
+        .area-ads { grid-area: ads; }
+        .area-footer { grid-area: footer; }
+
+        /* Exemplo 4 */
+        .grid-gap {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Exemplo 5 */
+        .grid-multiplas {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 60px);
+        }
+        .col-1-3 { grid-column: 1 / 3; }
+        .row-2-3 { grid-row: 2 / 3; }
+        .col-2-5 { grid-column: 2 / 5; }
+
+        /* Exemplo 6 */
+        .grid-alinhamento {
+            grid-template-columns: repeat(3, 120px);
+            grid-template-rows: 80px 80px;
+            justify-items: end;
+            align-items: center;
+        }
+
+        /* Exemplo 7 */
+        .grid-aninhado {
+            grid-template-columns: 2fr 1fr;
+        }
+        .subgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        .no-padding {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos Didáticos de CSS Grid</h1>
+    <p>
+        Este documento apresenta exemplos práticos e comentados de como utilizar o <strong>CSS Grid</strong> para criar layouts modernos e flexíveis.
+    </p>
+
+    <!-- Exemplo 1: Grid Básico -->
+    <div class="grid-demo">
+        <h2>1. Grid Básico: 2 colunas, 2 linhas</h2>
+        <p>
+            Definindo um grid simples com <code>grid-template-columns</code> e <code>grid-template-rows</code>.
+        </p>
+        <div class="grid-container grid-basico">
+            <div class="grid-item">A</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+            <div class="grid-item">D</div>
+        </div>
+        <!--
+            grid-template-columns: 1fr 1fr; -> Duas colunas de largura igual
+            grid-template-rows: 60px 60px; -> Duas linhas de 60px de altura
+        -->
+    </div>
+
+    <!-- Exemplo 2: Grid Responsivo com repeat() -->
+    <div class="grid-demo">
+        <h2>2. Grid Responsivo com <code>repeat()</code> e <code>auto-fit</code></h2>
+        <p>
+            Utilizando <code>repeat(auto-fit, minmax(120px, 1fr))</code> para criar um grid que se adapta ao tamanho da tela.
+        </p>
+        <div class="grid-container grid-responsivo">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+        <!--
+            repeat(auto-fit, minmax(120px, 1fr)):
+            - Cria o máximo de colunas possível, cada uma com no mínimo 120px e no máximo 1fr (fracionamento do espaço disponível).
+        -->
+    </div>
+
+    <!-- Exemplo 3: Grid com Áreas Nomeadas -->
+    <div class="grid-demo">
+        <h2>3. Grid com Áreas Nomeadas</h2>
+        <p>
+            Usando <code>grid-template-areas</code> para organizar o layout por nomes.
+        </p>
+        <div class="grid-container grid-areas">
+            <div class="grid-item area-header">Header</div>
+            <div class="grid-item area-menu">Menu</div>
+            <div class="grid-item area-content">Conteúdo</div>
+            <div class="grid-item area-ads">Anúncios</div>
+            <div class="grid-item area-footer">Rodapé</div>
+        </div>
+        <!--
+            grid-template-areas permite nomear regiões do grid e posicionar os elementos facilmente.
+        -->
+    </div>
+
+    <!-- Exemplo 4: Grid com Espaçamento (gap) -->
+    <div class="grid-demo">
+        <h2>4. Espaçamento entre Itens com <code>gap</code></h2>
+        <p>
+            O <code>gap</code> define o espaçamento entre linhas e colunas do grid.
+        </p>
+        <div class="grid-container grid-gap">
+            <div class="grid-item">A</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+            <div class="grid-item">D</div>
+            <div class="grid-item">E</div>
+            <div class="grid-item">F</div>
+        </div>
+        <!--
+            gap: 20px; -> Espaçamento de 20px entre todas as linhas e colunas
+        -->
+    </div>
+
+    <!-- Exemplo 5: Itens Ocupando Múltiplas Linhas/Colunas -->
+    <div class="grid-demo">
+        <h2>5. Itens Ocupando Múltiplas Linhas ou Colunas</h2>
+        <p>
+            Usando <code>grid-column</code> e <code>grid-row</code> para expandir itens.
+        </p>
+        <div class="grid-container grid-multiplas">
+            <div class="grid-item col-1-3">Colunas 1-2</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item row-2-3 col-2-5">Linha 2, Colunas 2-4</div>
+        </div>
+        <!--
+            grid-column: 1 / 3; -> O item ocupa da coluna 1 até antes da 3 (ou seja, 1 e 2)
+            grid-row: 2 / 3; -> O item ocupa apenas a linha 2
+        -->
+    </div>
+
+    <!-- Exemplo 6: Alinhamento de Itens -->
+    <div class="grid-demo">
+        <h2>6. Alinhamento de Itens no Grid</h2>
+        <p>
+            Usando <code>justify-items</code> e <code>align-items</code> para alinhar os itens dentro das células.
+        </p>
+        <div class="grid-container grid-alinhamento">
+            <div class="grid-item">Fim/Centro</div>
+            <div class="grid-item">Fim/Centro</div>
+            <div class="grid-item">Fim/Centro</div>
+            <div class="grid-item">Fim/Centro</div>
+            <div class="grid-item">Fim/Centro</div>
+            <div class="grid-item">Fim/Centro</div>
+        </div>
+        <!--
+            justify-items: end; -> Alinha horizontalmente à direita
+            align-items: center; -> Alinha verticalmente ao centro
+        -->
+    </div>
+
+    <!-- Exemplo 7: Grid Aninhado -->
+    <div class="grid-demo">
+        <h2>7. Grid Aninhado (Grid dentro de Grid)</h2>
+        <p>
+            Um item do grid pode ser outro grid!
+        </p>
+        <div class="grid-container grid-aninhado">
+            <div class="grid-item no-padding">
+                <div class="subgrid">
+                    <div class="grid-item">Sub 1</div>
+                    <div class="grid-item">Sub 2</div>
+                </div>
+            </div>
+            <div class="grid-item">Principal 2</div>
+        </div>
+        <!--
+            O primeiro item é um grid interno com 2 colunas.
+        -->
+    </div>
+
+    <hr>
+    <p>
+        <strong>Dica:</strong> Experimente modificar os valores dos grids para ver como o layout se adapta!
+    </p>
+</body>
+</html>
