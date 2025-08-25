@@ -200,3 +200,9 @@ Veja como fica a estrutura básica de um arquivo HTML:
 
 **Desafio (Opcional):**  
 Pesquise sobre a meta tag `description` e adicione uma ao `<head>`, descrevendo o conteúdo da sua página.
+
+## Referências e Recursos
+- [MDN Web Docs: HTML Básico](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [W3Schools: HTML Tutorial](https://www.w3schools.com/html/)
+- [Guia de Referência HTML (em português)](https://www.devmedia.com.br/guia/html/38111)
+- [HTML Living Standard (WHATWG)](https://html.spec.whatwg.org/)

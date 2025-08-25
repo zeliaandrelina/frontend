@@ -272,4 +272,10 @@ Permite sobrescrever o alinhamento individual de um item no eixo cruzado, ignora
 
 ---
 
-**Experimente modificar as propriedades do Flexbox e observe como o layout se adapta!**
+## Referências e Recursos
+- [Documentação oficial do Flexbox (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_Concepts_of_Flexbox)
+- [Guia CSS Tricks: A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Flexbox Froggy (jogo interativo para aprender Flexbox)](https://flexboxfroggy.com/#pt-br)
+- [Flexbox Defense (jogo para praticar Flexbox)](http://www.flexboxdefense.com/)
+- [FlexForm: Documentação oficial](https://github.com/rsuite/rsuite-flexbox-grid)
+- [Artigo: Flexbox Layout – Guia Completo (Origamid)](https://www.origamid.com/projetos/flexbox-guia-completo/)

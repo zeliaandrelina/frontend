@@ -60,20 +60,6 @@ A tag `<a>` cria hiperlinks, conectando páginas ou seções. O atributo `href` 
 
 ---
 
-## 🚀 Atividade
-
-**Crie um perfil pessoal com listas e links:**
-
-1. Crie `perfil.html` com estrutura básica HTML e `<title>Meu Perfil`.
-2. No `<body>`:
-     - `<h1>` com seu nome
-     - `<h2>Meus Hobbies</h2>` + `<ul>` com 3 hobbies
-     - `<h2>Top 3 Músicas</h2>` + `<ol>` com 3 músicas
-     - `<h2>Links Úteis</h2>` + `<ul>` com 3 links (cada `<a>` com `target="_blank"`)
-3. Teste no navegador e envie conforme instruções.
-
----
-
 # 🖼️ Imagens e Tabelas
 
 Podemos enriquecer nossas páginas com imagens e organizar dados usando tabelas.
@@ -140,8 +126,16 @@ Para mesclar células, use `colspan` (colunas) e `rowspan` (linhas):
 
 **Crie uma página com imagem e tabela de horários:**
 
-1. Crie a pasta `semana-05`, com `horario.html` e uma subpasta `imagens`.
+1. Crie a a atividade pratica3.html
 2. No `<body>`, adicione `<h1>Meu Horário de Aulas` e uma imagem relacionada a estudos.
 3. Crie uma tabela com `<thead>` para os dias da semana e `<tbody>` para os horários e disciplinas.
 4. Use `colspan` para representar aulas em dois horários seguidos.
 5. Teste no navegador e envie conforme instruções.
+
+## Referências e Recursos
+- [MDN Web Docs: Listas HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
+- [MDN Web Docs: Links HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a)
+- [MDN Web Docs: Imagens HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img)
+- [MDN Web Docs: Tabelas HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table)
+- [W3Schools: HTML Lists](https://www.w3schools.com/html/html_lists.asp)
+- [W3Schools: HTML Tables](https://www.w3schools.com/html/html_tables.asp)

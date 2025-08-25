@@ -142,3 +142,8 @@ Use tags para destacar partes do texto:
 
 > **Dica:** Use tags semânticas para tornar seu artigo mais acessível e organizado!
 
+## Referências e Recursos
+- [MDN Web Docs: HTML Element Reference](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
+- [W3Schools: HTML Elements](https://www.w3schools.com/html/html_elements.asp)
+- [HTML5 Doctor: Element Index](http://html5doctor.com/element-index/)
+- [Guia de Acessibilidade na Web (W3C)](https://www.w3.org/WAI/fundamentals/accessibility-intro/pt)

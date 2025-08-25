@@ -167,3 +167,11 @@ Crie uma página com:
 
 Abra no navegador e experimente mudar cores, gradientes e fontes!
 
+## Referências e Recursos
+- [Documentação oficial do CSS (MDN)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [W3Schools CSS Tutorial](https://www.w3schools.com/css/)
+- [Guia CSS Tricks](https://css-tricks.com/snippets/css/)
+- [Can I use (compatibilidade CSS)](https://caniuse.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Color Hunt (paletas de cores)](https://colorhunt.co/)
+- [CSS Gradient Generator](https://cssgradient.io/)

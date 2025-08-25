@@ -108,12 +108,32 @@ Assim, o tamanho total do elemento inclui padding e borda, tornando o layout pre
 
 ## 🚀 Atividade Prática 06
 
-1. Crie um arquivo `meus-cards.html`.
-2. Adicione um container com três `<article class="card">`.
-3. No CSS, aplique:
-        - `box-sizing: border-box` universal.
-        - `.card` com largura máxima, padding, borda, margem, cor de fundo e borda arredondada.
-        - Use `gap` no container para espaçamento.
-4. Experimente adicionar `aspect-ratio` ou `box-shadow` para um visual moderno.
+Crie uma página com:
+
+1. Adicione um container com três `<article class="card">`.
+2. No CSS, aplique:
+    - `box-sizing: border-box` universal.
+    - `.card` com largura máxima, padding, borda, margem, cor de fundo e borda arredondada.
+    - Use `gap` no container para espaçamento.
+    - Defina diferentes valores de `padding` e `margin` para experimentar o espaçamento interno e externo das caixas.
+    - Adicione `border` com diferentes larguras, estilos e cores para cada card.
+    - Utilize `outline` em um dos cards para destacar o foco (acessibilidade).
+    - Experimente `min-width` e `max-width` para limitar o tamanho dos cards.
+    - Teste `aspect-ratio` para manter proporções fixas.
+    - Adicione `box-shadow` para um visual moderno.
+    - Altere o `background` de cada card usando gradientes ou cores sólidas.
+    - Faça um dos cards ter `margin: auto` para centralizá-lo no container.
+3. Observe como cada propriedade do Box Model afeta o layout e a aparência dos elementos.
+
+> Dica: Use as ferramentas de inspeção do navegador para visualizar as camadas do Box Model em cada elemento.
 
 Abra no navegador e veja cards responsivos, bonitos e alinhados com as melhores práticas atuais.
+
+## Referências e Recursos
+- [MDN Web Docs: Box Model](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks/The_box_model)
+- [MDN Web Docs: box-sizing](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizing)
+- [CSS Tricks: CSS Box Model](https://css-tricks.com/the-css-box-model/)
+- [W3Schools: CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [MDN Web Docs: aspect-ratio](https://developer.mozilla.org/pt-BR/docs/Web/CSS/aspect-ratio)
+- [MDN Web Docs: gap](https://developer.mozilla.org/pt-BR/docs/Web/CSS/gap)
+- [MDN Web Docs: min(), max(), clamp()](https://developer.mozilla.org/pt-BR/docs/Web/CSS/min)

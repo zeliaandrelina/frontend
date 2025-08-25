@@ -87,3 +87,9 @@ Crie um formulário de cadastro com os seguintes campos:
 - Aceitar termos (checkbox, obrigatório)
 
 Aplique as práticas de acessibilidade e utilize os atributos apresentados. Um bom formulário é claro, acessível e fácil de usar.
+
+## Referências e Recursos
+- [MDN Web Docs: HTML Forms](https://developer.mozilla.org/pt-BR/docs/Learn/Forms)
+- [W3Schools: HTML Forms](https://www.w3schools.com/html/html_forms.asp)
+- [Acessibilidade em Formulários Web (W3C)](https://www.w3.org/WAI/tutorials/forms/)
+- [Guia de Acessibilidade Front-End](https://frontendbr.github.io/accessibility/)
